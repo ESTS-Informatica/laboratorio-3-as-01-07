@@ -2,9 +2,12 @@
 public class GroundTransportation extends Transport {
     private String licensePlate;
 
+    private static final double FEES = 4.0;
+
     public GroundTransportation(String licensePlate) {
         super();
         this.licensePlate = licensePlate;
+        setFees(FEES);
     }
 
     public String getLicensePlate() {
@@ -21,7 +24,7 @@ public class GroundTransportation extends Transport {
 
     @Override
     public double getFees() {
-        return 3.0;
+        return FEES;
     }
 
     @Override

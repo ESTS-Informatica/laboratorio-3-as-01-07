@@ -3,10 +3,13 @@ public class AirTransportation extends Transport {
     private String name;
     private int numberOfContainers;
 
+    private static final double FEES = 4.0;
+
     public AirTransportation(String name, int numberOfContainers) {
         super();
         this.name = name;
         this.numberOfContainers = numberOfContainers;
+        setFees(FEES);
     }
 
     public String getName() {
@@ -35,7 +38,7 @@ public class AirTransportation extends Transport {
 
     @Override
     public double getFees() {
-        return 4.0;
+        return FEES;
     }
 
     @Override
