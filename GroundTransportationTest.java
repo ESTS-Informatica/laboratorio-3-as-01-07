@@ -1,9 +1,8 @@
 
+import static org.junit.Assert.*;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * The test class GroundTransportation.
@@ -15,7 +14,7 @@ public class GroundTransportationTest {
     
     private GroundTransportation groundTransport;
 
-    @BeforeEach
+    @Before
     public void setUp() {
         groundTransport = new GroundTransportation("ABC123");
     }
